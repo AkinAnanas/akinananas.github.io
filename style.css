@@ -5,8 +5,14 @@ html {
 
 header {
     text-align: center;
-    font-size: 72px;
+    font-size: 64px;
     color: saddlebrown;
+}
+
+subtitle {
+    text-align: center;
+    font-size: 24px;
+    color: rosybrown;
 }
 
 body {
