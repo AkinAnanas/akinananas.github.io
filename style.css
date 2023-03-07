@@ -1,20 +1,39 @@
 
 html {
-    background-color: lightslategrey;
+    background-color: lightsteelblue;
+    font-family: "Consolas";
 }
 
 header {
     text-align: center;
     font-size: 64px;
-    color: saddlebrown;
+    color: lightblue;
+    border: solid 1mm lightblue;
+    margin: 5mm 5mm 5mm 5mm;
+    width: 75%;
 }
 
 h1 {
     text-align: center;
     font-size: 24px;
-    color: rosybrown;
+    color: lightblue;
+}
+
+nav {
+    width: 100%;
+}
+
+ul {
+    color: gray;
+    display: inline-block;
+    text-align: center;
 }
 
 body {
+    color: white;
+    text-align: justify;
+}
 
+.dropdown {
+    
 }
