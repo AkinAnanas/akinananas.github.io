@@ -1,7 +1,11 @@
+@font-face {
+    font-family: Consolas;
+    src: "fonts/Consolas.ttf";
+  }
 
 html {
     background-color: lightsteelblue;
-    font-family: "Consolas";
+    font-family: Consolas;
     color: white;
 }
 
@@ -72,7 +76,7 @@ p {
     text-align: justify;
     margin-left: 12%;
     margin-right: 12%;
-    color: mediumpurpl
+    color: mediumpurple;
 }
 
 a {
