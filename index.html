@@ -1,26 +1,43 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <link rel="stylesheet" href="style.css">
+        <!--<link rel="icon" href="images/desktop-computer.png">-->
+        <script src="actions.js" onload=""></script>
         <title>Akinni.tech</title>
         <header>
             Portfolio
             <h1>Akinni James</h1>
         </header>
         <nav>
-            <ul>Home</ul>
-            <ul>Education</ul>
-            <ul class="dropdown">Projects</ul>
-            <ul>Contact</ul>
+            <ul>
+                <li onclick="scrollTo(0, 0)">Home</li>
+                <li onclick="scrollTo(0, 50)">Education</li>
+                <li id="projects" 
+                    onmouseover="projectsEnter()"
+                    onmouseout="projectsLeave()">Projects</li>
+                <li onclick="scrollTo(0,100)">Contact</li>
+            </ul>
+            <div id="projects_dropdown" 
+                    onmouseover="dropdownEnter()"
+                    onmouseout="dropdownLeave()" hidden="true">
+                <ul>
+                    <li>Agent Academia</li>
+                    <li>Bughouse Blitz</li>
+                    <li>CloudTen</li>
+                    <li>Doku</li>
+                </ul>
+            </div>
         </nav>
     </head>
 
     <body>
-        <p>Welcome to my technology portfolio. Here you can 
-            explore the projects I have made and my resume.</p>
+        <p class="box">My name is Akinni James. Thanks for checking out my
+            technology portfolio. Here you can get to know me,
+            explore my education background, view my projects and contact me.</p>
     </body>
 
     <footer>
-
+        <!--<a href="https://www.flaticon.com/free-icons/computer" title="computer icons">Computer icons created by vectorsmarket15 - Flaticon</a>-->
     </footer>
 </html>
