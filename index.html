@@ -11,12 +11,12 @@
         </header>
         <nav>
             <ul>
-                <li onclick="scrollTo(0, 0)">Home</li>
-                <li onclick="scrollTo(0, 50)">Education</li>
+                <li onclick="findSection('about')">About</li>
+                <li onclick="findSection('education')">Education</li>
                 <li id="projects" 
                     onmouseover="projectsEnter()"
                     onmouseout="projectsLeave()">Projects</li>
-                <li onclick="scrollTo(0,100)">Contact</li>
+                <li onclick="findSection('contact')">Contact</li>
             </ul>
             <div id="projects_dropdown" 
                     onmouseover="dropdownEnter()"
@@ -32,12 +32,42 @@
     </head>
 
     <body>
-        <p class="box">My name is Akinni James. Thanks for checking out my
-            technology portfolio. Here you can get to know me,
-            explore my education background, view my projects and contact me.</p>
+        <section>
+            <!--ABOUT-->
+            <p class="box"> My name is Akinni James. Thanks for checking out my
+                technology portfolio. Here you can get to know me,
+                explore my education background, view my projects and contact me. </p>
+            <img class="box" src="images/headshot.png" />
+        </section>
+        <div class="section_header" style="padding: 20px;">Education</div>
+        <section id="education">
+            <!--EDUCATION-->
+            <center>
+                <table>
+                    <tr>
+                        <td>Marietta High School</td>
+                        <td>2017-2021</td>
+                    </tr>
+                    <tr>
+                        <td>University of Alabama at Birmingham</td>
+                        <td>2022-2023</td>
+                    </tr>
+                </table> 
+            </center>
+            
+        </section>
     </body>
 
     <footer>
+        <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/akinni-james-21489a150">
+            <img class="icon_link" src="images/linkedin-icon.png" alt="" />
+        </a>
+        <a target="_blank" rel="noopener noreferrer" href="https://www.github.com/AkinAnanas">
+            <img class="icon_link" src="images/github-icon.png" alt="" />
+        </a>
+        <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/channel/UCQw7umln__ZncXs_VveBDvQ">
+            <img class="icon_link" src="images/youtube-icon.png" alt="">
+        </a>
         <!--<a href="https://www.flaticon.com/free-icons/computer" title="computer icons">Computer icons created by vectorsmarket15 - Flaticon</a>-->
     </footer>
 </html>

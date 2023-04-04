@@ -30,7 +30,7 @@ h1 {
     color: lightblue;
 }
 
-nav {
+nav, .section_header {
     background-color: lightblue;
     color: lightsteelblue;
     text-align: center;
@@ -38,9 +38,20 @@ nav {
     margin-right: -8px;
 }
 
+.section_header {
+    padding: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
 ul {
     margin-top: 0px;
     margin-bottom: 0px;
+}
+
+ol {
+    list-style-type: decimal;
+    accent-color: white;
 }
 
 li {
@@ -63,31 +74,68 @@ li:hover {
 }
 
 .box {
-    width: 30%;
-    padding: 6%;
+    max-width: 25%;
+    margin-top: 10px;
+    padding: 4%;
     color: mediumpurple;
     font-weight: bold;
-    margin-left: 3%;
     border: mediumpurple 1mm solid;
-    background-color: rgba(147, 112, 216, .2);
-}
-
-p {
     text-align: justify;
-    margin-left: 12%;
-    margin-right: 12%;
-    color: mediumpurple;
+    background-color: rgba(147, 112, 216, .2);
+    display: inline-block;
+    vertical-align: top;
 }
 
-a {
+img {
+    display: inline-block;
+    margin-top: 10px;
+    max-width: 25%;
+    max-height: 200px;
+}
+
+.box_brief {
+    max-width: 25%;
+    padding: 4%;
     color: white;
+    text-align: center;
+    background-color: mediumpurple;
+    font-weight: bolder;
+    display: inline-block;
+    vertical-align: top;
+}
+
+table td {
+    background-color: mediumpurple;
+    padding: 20px;
+}
+
+section {
+    width: 100%;
+    margin-top: 3%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3%;
+    text-align: center;
+}
+
+.icon_link {
+    width: 30px;
+    height: 30px;
 }
 
 footer {
     background-color: lightblue;
     color: lightsteelblue;
-    padding: 20px 20px 20px 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
     margin-left: -8px;
     margin-right: -8px;
+    margin-top: 3%;
     text-align: center;
+}
+
+a {
+    text-decoration: none;
+    padding-left: 10px;
+    padding-right: 10px;
 }

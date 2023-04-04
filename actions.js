@@ -46,6 +46,10 @@ function updateDropdown() {
     }
 }
 
-function selectProjects() {
-
+function findSection(section) {
+    if (section.toLowerCase() == 'contact') {
+        window.scrollTo(0, document.body.scrollHeight);
+    } else if (section.toLowerCase() == 'education') {
+        window.scrollTo(0, document.getElementById("education").scrollHeight);
+    }
 }
