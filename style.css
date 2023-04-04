@@ -7,6 +7,8 @@ html {
     background-color: lightsteelblue;
     font-family: Consolas;
     color: white;
+    scroll-behavior: smooth;
+    height: 100%;
 }
 
 header {
@@ -64,6 +66,7 @@ li:hover {
     color: white;
     font-weight: bold;
     background-color: mediumpurple;
+    cursor: grab;
 }
 
 #projects_dropdown {
@@ -121,21 +124,67 @@ section {
 .icon_link {
     width: 30px;
     height: 30px;
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+    display: inline-block;
 }
 
 footer {
     background-color: lightblue;
     color: lightsteelblue;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    text-align: center;
+    height: 100%;
     margin-left: -8px;
     margin-right: -8px;
-    margin-top: 3%;
-    text-align: center;
+    margin-bottom: -10px;
+    padding: 10px 0px 10px 0px;
 }
 
 a {
     text-decoration: none;
     padding-left: 10px;
     padding-right: 10px;
+    vertical-align: middle;
+    height: 100%;
+}
+
+.text_link {
+    text-decoration: underline;
+    color: gray;
+    cursor: grab;
+}
+
+form {
+    text-align: center;
+    display: block;
+    width: 50%;
+}
+
+button {
+    font-size: 18px;
+    font-family: Consolas;
+    width: 50%;
+    color: white;
+    border: mediumpurple 3px solid;
+    background-color: mediumpurple;
+    border-radius: 10px;
+}
+
+button:hover {
+    background-color: rgba(147, 112, 216, .8);
+    cursor: grab;
+}
+
+textarea {
+    width: 70%;
+    color: mediumpurple;
+    border: mediumpurple 1mm solid;
+    background-color: rgba(147, 112, 216, .2);
+    resize: none;
+}
+
+label {
+    max-width: 50%;
+    padding: 10px;
+    background-color: mediumpurple;
 }

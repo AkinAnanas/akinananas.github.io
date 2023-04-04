@@ -50,6 +50,9 @@ function findSection(section) {
     if (section.toLowerCase() == 'contact') {
         window.scrollTo(0, document.body.scrollHeight);
     } else if (section.toLowerCase() == 'education') {
-        window.scrollTo(0, document.getElementById("education").scrollHeight);
+        window.scrollTo(0, 
+            document.getElementById("education").scrollHeight + window.innerHeight);
+    } else if (section.toLowerCase() == 'top') {
+        window.scrollTo(0, 0);
     }
 }
