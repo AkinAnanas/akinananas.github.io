@@ -49,10 +49,14 @@ function updateDropdown() {
 function findSection(section) {
     if (section.toLowerCase() == 'contact') {
         window.scrollTo(0, document.body.scrollHeight);
-    } else if (section.toLowerCase() == 'education') {
-        window.scrollTo(0, 
-            document.getElementById("education").scrollHeight + window.innerHeight);
     } else if (section.toLowerCase() == 'top') {
         window.scrollTo(0, 0);
+    } else {
+        var element = document.getElementById(section);
+        window.scrollTo(0, element.offsetTop);
     }
+}
+
+function findProject(project) {
+    alert("Coming Soon!");
 }

@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <link rel="stylesheet" href="style.css">
-        <!--<link rel="icon" href="images/desktop-computer.png">-->
+        <!--<link rel="icon" href="images/headshot.png">-->
         <script src="actions.js" onload=""></script>
         <title>Akinni.tech</title>
         <header>
@@ -11,56 +11,97 @@
         </header>
         <nav>
             <ul>
-                <li onclick="findSection('about')">About</li>
-                <li onclick="findSection('education')">Education</li>
-                <li id="projects" 
+                <li class="bar" onclick="findSection('about')">About</li>
+                <li class="bar" onclick="findSection('education')">Education</li>
+                <li class="bar" id="projects" 
                     onmouseover="projectsEnter()"
                     onmouseout="projectsLeave()">Projects</li>
-                <li onclick="findSection('contact')">Contact</li>
+                <li class="bar" onclick="findSection('skills')">Skills</li>
+                <li class="bar" onclick="findSection('contact')">Contact</li>
             </ul>
             <div id="projects_dropdown" 
                     onmouseover="dropdownEnter()"
                     onmouseout="dropdownLeave()" hidden="true">
                 <ul>
-                    <li>Agent Academia</li>
-                    <li>Bughouse Blitz</li>
-                    <li>CloudTen</li>
-                    <li>Doku</li>
+                    <li class="bar" onclick="findProject('aa')">Agent Academia</li>
+                    <li class="bar" onclick="findProject('bb')">Bughouse Blitz</li>
+                    <li class="bar" onclick="findProject('ct')">CloudTen</li>
+                    <li class="bar" onclick="findProject('d')">Doku</li>
                 </ul>
             </div>
         </nav>
     </head>
 
     <body>
-        <section>
+        <section id="about">
             <!--ABOUT-->
             <p class="box"> Hello, my name is Akinni James. Thanks for checking out my
                 technology portfolio. Here you can get to know me,
                 explore my education background, view my projects and contact me. </p>
             <img class="box" src="images/headshot.png" />
         </section>
-        <div class="section_header" style="padding: 20px;">Education</div>
+        <div class="section_header">Education</div>
         <section id="education">
             <!--EDUCATION-->
-            <center>
-                <table>
-                    <tr>
-                        <td>Marietta High School</td>
-                        <td>2017-2021</td>
-                    </tr>
-                    <tr>
-                        <td>University of Alabama at Birmingham</td>
-                        <td>2022-2023</td>
-                    </tr>
-                </table> 
-            </center>
+            <table>
+                <!-- Schools Attended Section -->
+                <tr>
+                    <th>Schools Attended</th>
+                    <th>Date</th>
+                </tr>
+                <tr>
+                    <td>Marietta High School</td>
+                    <td>2017-2021</td>
+                </tr>
+                <tr>
+                    <td>University of Alabama at Birmingham</td>
+                    <td>2022-2023</td>
+                </tr>
+                <!-- Courses Taken Section -->
+                <tr>
+                    <th>Courses Taken</th>
+                    <th>Grade</th>
+                </tr>
+                <tr>
+                    <td>Intro to Computer Science</td>
+                    <td>A</td>
+                </tr>
+                <tr>
+                    <td>Calculus I</td>
+                    <td>A</td>
+                </tr>
+            </table>
             <!-- add major/minor here -->
             <!-- add programming languages known -->
-            <!-- add skills -->
             <!-- add the courses taken here -->
         </section>
-        <div class="section_header" style="padding: 20px;">Contact</div>
-        <section class="contact">
+        <div class="section_header">Projects</div>
+        <section>
+            <!--PROJECTS-->
+        </section>
+        <div class="section_header">Skills</div>
+        <section id="skills">
+            <!--SKILLS -->
+            <p class="box">
+                I have used and worked with a 
+                variety of programming languages, 
+                including: C#, Java, and Python.
+                I have also worked with many different
+                development environments and software 
+                including VS Code, Visual Studio, IntelliJ,
+                and Android Studio.
+            </p>
+            <ul id="skills_list" class="box_brief">
+                <h2>Skills:</h2>
+                <li>Microsoft Office Specialist</li>
+                <li>Experienced Tutor</li>
+                <li>.NET Framework</li>
+                <li>Android Ecosystem</li>
+                <li>Web Development (HTML/CSS)</li>
+            </ul>
+        </section>
+        <div class="section_header">Contact</div>
+        <section id="contact">
             <!--CONTACTS-->
             <center>
                 <form action="submit">

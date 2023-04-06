@@ -26,10 +26,15 @@ header {
     margin-right: auto;
 }
 
-h1 {
+h1, h2 {
     text-align: center;
     font-size: 24px;
     color: lightblue;
+}
+
+h2 {
+    margin-top: 0px; 
+    margin-bottom: 5px;
 }
 
 nav, .section_header {
@@ -49,20 +54,28 @@ nav, .section_header {
 ul {
     margin-top: 0px;
     margin-bottom: 0px;
+    list-style-type: square;
+    list-style-position: inside;
 }
 
-ol {
-    list-style-type: decimal;
-    accent-color: white;
+#skills_list {
+    margin-top: 10px; 
+    text-align: left;
 }
 
 li {
+    margin-top: 10px;
+}
+
+.bar {
     display: inline-block;
     text-align: center;
     padding: 20px 20px 20px 20px;
+    margin-top: 0px;
+    /*max-width: 10%;*/
 }
 
-li:hover {
+.bar:hover {
     color: white;
     font-weight: bold;
     background-color: mediumpurple;
@@ -110,6 +123,17 @@ img {
 table td {
     background-color: mediumpurple;
     padding: 20px;
+    text-align: center;
+}
+
+table {
+    display: inline-block;
+}
+
+th {
+    color: white;
+    background-color: purple;
+    padding: 10px;
 }
 
 section {
@@ -119,6 +143,10 @@ section {
     margin-right: auto;
     margin-bottom: 3%;
     text-align: center;
+}
+
+.section_header {
+    padding: 20px;
 }
 
 .icon_link {
