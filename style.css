@@ -17,8 +17,6 @@ header {
     color: lightblue;
     padding-top: 3%;
     padding-bottom: 2%;
-    /*border: solid 1mm lightblue;*/
-    background-color: lightsteelblue;
     margin: 5mm 5mm 5mm 5mm;
     width: 75%;
     display: block;
@@ -182,16 +180,10 @@ a {
     cursor: grab;
 }
 
-form {
-    text-align: center;
-    display: block;
-    width: 50%;
-}
-
 button {
     font-size: 18px;
     font-family: Consolas;
-    width: 50%;
+    width: 60%;
     color: white;
     border: mediumpurple 3px solid;
     background-color: mediumpurple;
@@ -203,16 +195,51 @@ button:hover {
     cursor: grab;
 }
 
-textarea {
-    width: 70%;
+.label_textbox {
+    font-size: 18px;
+    display: flex;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 20px;
+}
+
+textarea, .textbox {
+    font-family: Consolas;
+    font-size: 18px;
     color: mediumpurple;
     border: mediumpurple 1mm solid;
     background-color: rgba(147, 112, 216, .2);
     resize: none;
+    outline-color: purple;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
+.label_textarea {
+    width: fit-content;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+}
+
+textarea {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/*
+ *  The required fields that are left empty
+ *  when submit is pressed should turn 
+ *  rgba(255, 0, 0, .2) 
+*/
+
 label {
-    max-width: 50%;
     padding: 10px;
     background-color: mediumpurple;
+    text-align: center;
+    min-width: 120px;
+    position: relative;
+    z-index: 1000;
 }

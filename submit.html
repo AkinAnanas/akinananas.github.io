@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <script src="actions.js" onload=""></script>
+        <title>Done</title>
+        <style>
+            body {
+                text-align: center;
+            }
+
+            button {
+                background-color: purple;
+                border-color: purple;
+                width: 50%;
+                margin-top: 20px;
+                margin-bottom: 10px;
+            }
+
+            button:hover {
+                background-color: rgba(128, 0, 128, .8);
+            }
+
+            div {
+                border: lightblue 3px solid;
+                margin-top: auto;
+                margin-bottom: auto;
+                position: absolute;
+                top: 50%;
+                transform: translate(-50%, -50%);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="box_brief">
+            <header>Sent!</header>
+            <p>Thank you for your response . . . <br>
+                I will respond to you as soon as possible.</p>
+            <button id="back" onclick="javascript:history.back()">Back</button>
+        </div>
+    </body>
+</html>

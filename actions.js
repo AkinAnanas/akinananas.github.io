@@ -60,3 +60,8 @@ function findSection(section) {
 function findProject(project) {
     alert("Coming Soon!");
 }
+
+function invalid(id) {
+    var element = document.getElementById(id);
+    element.style.backgroundColor = 'rgba(255, 0, 0, .2)';
+}
