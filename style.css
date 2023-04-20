@@ -29,7 +29,10 @@ body, head {
 }
 
 @media screen and (max-width: 1000px) {
-    /*css specific to small screens under 768px width here*/
+    html {
+        width: 100%;
+    }
+
     body, head {
         min-width: none;
         width: 100%;
