@@ -1,11 +1,10 @@
 @font-face {
-    font-family: Consolas;
-    src: url("fonts/Consolas.ttf") format('ttf');
+    font-family: 'Space Mono', monospace;
   }
 
 html {
     background-color: lightsteelblue;
-    font-family: Consolas;
+    font-family: 'Space Mono';
     color: white;
     scroll-behavior: smooth;
     height: 100%;
@@ -183,7 +182,7 @@ a {
 
 button {
     font-size: 18px;
-    font-family: Consolas;
+    font-family: 'Space Mono';
     width: 60%;
     color: white;
     border: mediumpurple 3px solid;
@@ -206,7 +205,7 @@ button:hover {
 }
 
 textarea, .textbox {
-    font-family: Consolas;
+    font-family: 'Space Mono';
     font-size: 18px;
     color: mediumpurple;
     border: mediumpurple 1mm solid;
@@ -237,6 +236,7 @@ textarea {
 */
 
 label {
+    font-size: 18px;
     padding: 10px;
     background-color: mediumpurple;
     text-align: center;
