@@ -31,6 +31,7 @@ body, head {
 @media screen and (max-width: 1000px) {
     html {
         width: 100%;
+        zoom: 1;
     }
 
     body, head {
