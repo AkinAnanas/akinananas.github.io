@@ -1,27 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
 @font-face {
     font-family: 'Source Code Pro', monospace;
 }
 
 html {
-    background-color: lightsteelblue;
+    background-color: mediumpurple;
     font-family: 'Source Code Pro';
     color: white;
     scroll-behavior: smooth;
     height: 100%;
 }
 
+body, head {
+    background-color: lightsteelblue;
+    min-width: 800px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 header {
     text-align: center;
     font-size: 64px;
     color: lightblue;
-    padding-top: 3%;
-    padding-bottom: 2%;
-    background-color: lightsteelblue;
-    margin: 5mm 5mm 5mm 5mm;
+    padding-top: 6%;
+    padding-bottom: 6%;
     width: 75%;
     display: block;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 0px;
 }
 
 h1, h2 {
@@ -39,8 +56,6 @@ nav, .section_header {
     background-color: lightblue;
     color: lightsteelblue;
     text-align: center;
-    margin-left: -8px;
-    margin-right: -8px;
 }
 
 .section_header {
@@ -96,15 +111,15 @@ li {
     border: mediumpurple 1mm solid;
     text-align: justify;
     background-color: rgba(147, 112, 216, .2);
-    display: inline-block;
     vertical-align: top;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 img {
     display: inline-block;
-    margin-top: 10px;
-    max-width: 25%;
-    max-height: 200px;
+    width: 50%;
+    margin-left: 25%;
 }
 
 .box_brief {
@@ -114,8 +129,9 @@ img {
     text-align: center;
     background-color: mediumpurple;
     font-weight: bolder;
-    display: inline-block;
     vertical-align: top;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 table td {
@@ -153,6 +169,7 @@ section {
     -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
     filter: grayscale(100%);
     display: inline-block;
+    margin: 0px;
 }
 
 footer {
@@ -160,8 +177,6 @@ footer {
     color: lightsteelblue;
     text-align: center;
     height: 100%;
-    margin-left: -8px;
-    margin-right: -8px;
     margin-bottom: -10px;
     padding: 10px 0px 10px 0px;
 }
