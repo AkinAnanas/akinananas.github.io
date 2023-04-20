@@ -33,7 +33,7 @@ function select(option) {
 
 function updateDropdown() {
     dropdown = document.getElementById("projects_dropdown");
-    projects = document.getElementById("projects");
+    projects = document.getElementById("projects_button");
     dropdown.hidden = !(overProjects || overDropdown || projectsSelected);
     if (!dropdown.hidden) {
         projects.style.fontWeight = 'bold';
@@ -47,9 +47,7 @@ function updateDropdown() {
 }
 
 function findSection(section) {
-    if (section.toLowerCase() == 'contact') {
-        window.scrollTo(0, document.body.scrollHeight);
-    } else if (section.toLowerCase() == 'top') {
+    if (section.toLowerCase() == 'top') {
         window.scrollTo(0, 0);
     } else {
         var element = document.getElementById(section);
