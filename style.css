@@ -1,6 +1,6 @@
 @font-face {
     font-family: Consolas;
-    src: "fonts/Consolas.ttf";
+    src: url("fonts/Consolas.ttf") format('ttf');
   }
 
 html {
@@ -17,6 +17,7 @@ header {
     color: lightblue;
     padding-top: 3%;
     padding-bottom: 2%;
+    background-color: lightsteelblue;
     margin: 5mm 5mm 5mm 5mm;
     width: 75%;
     display: block;
