@@ -6,7 +6,7 @@ const port = 2900;
 
 app.use(express.json());
 app.use(bodyParser.json());
-app.use(express.static('public'));
+app.use(express.static('./'));
 
 app.post('/submit', (req, res) => {
     const data = req.body;
