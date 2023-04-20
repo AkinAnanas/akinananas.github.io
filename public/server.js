@@ -1,14 +1,21 @@
 const express = require('express');
 const app = express();
-const port = 3000;
+const bodyParser = require('body-parser');
+
+const port = 2900;
 
 app.use(express.json());
+app.use(bodyParser.json());
 app.use(express.static('public'));
 
 app.post('/submit', (req, res) => {
-    // send user message to database here
+    const data = req.body;
+    if (data.first_name != undefined) {
+        console.log(data.first_name + ' ' 
+            + data.last_name + ' has sent you a message');
+        // send user message to database here
+    }
     res.sendFile(__dirname + "/submit.html");
-    console.log(req.body);
 });
 
 app.listen(2900, () => {

@@ -78,8 +78,6 @@ function sendMessage() {
         message: msg
     };
 
-    console.log(data);
-
     const options = {
         method: 'POST',
         headers: { 
@@ -87,5 +85,6 @@ function sendMessage() {
         },
         body: JSON.stringify(data)
     };
-    fetch('/submit.html', options);
+    fetch('/submit', options);
+    document.forms[0].submit();
 }

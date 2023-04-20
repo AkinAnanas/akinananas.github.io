@@ -106,7 +106,7 @@
         <div class="section_header">Contact</div>
         <section id="contact">
             <!--CONTACTS-->
-            <form action="/submit" method="POST">
+            <form action="/submit" method="POST" name="contact_form" id="contact_form">
                 <div class="label_textbox">
                     <label for="fname">First Name:</label>
                     <input class="textbox" type="text" name="fname" id="fname"
@@ -130,7 +130,7 @@
                     <textarea name="message" id="message" cols="34" rows="20"
                         placeholder="Enter your message here" 
                         oninvalid="invalid('message')" required></textarea>
-                    <button>Submit</button>
+                    <button type="button" onclick="sendMessage()">Submit</button>
                 </div>
             </form>
         </section>
