@@ -31,7 +31,7 @@ body, head {
 @media screen and (max-width: 1000px) {
     html {
         width: 100%;
-        zoom: 1;
+        zoom: 50%;
     }
 
     body, head {
@@ -140,6 +140,7 @@ img {
     color: white;
     text-align: center;
     background-color: mediumpurple;
+    border: mediumpurple 1mm solid;
     font-weight: bolder;
     vertical-align: top;
     margin-left: auto;
