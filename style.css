@@ -80,7 +80,6 @@ ul {
     margin-top: 0px;
     margin-bottom: 0px;
     list-style-type: square;
-    list-style-position: inside;
 }
 
 #skills_list {
@@ -270,3 +269,10 @@ label {
     position: relative;
     z-index: 1000;
 }
+
+/*
+ * .box_project (the class for the project boxes)
+ * 
+ * learn more button with rgba(147, 112, 216, .2) background
+ *
+*/

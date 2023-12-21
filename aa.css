@@ -1,0 +1,42 @@
+
+@font-face {
+  font-family: veteran;
+  src: url("fonts/veteran typewriter.ttf");
+}
+
+@keyframes slide {
+	from { background-position: 0 0; }
+	to { background-position: 100% 0; }
+}
+
+html {
+    background-color: #242524;
+    background-image: url("images/background.png");
+    background-repeat: repeat;
+    background-size: 256px;
+    animation: slide 40s linear infinite;
+}
+
+header {
+    text-align: center;
+    transform: translateY(-250%);
+    color: white;
+    font-size: 144px;
+    font-family: veteran;
+    text-shadow:
+    3px 3px 0 #000,
+    -3px 3px 0 #000,
+    -3px -3px 0 #000,
+    3px -3px 0 #000;
+}
+
+.headerContainer {
+    position: relative;
+    text-align: center;
+}
+
+img {
+}
+
+nav {
+}

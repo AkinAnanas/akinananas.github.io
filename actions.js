@@ -65,7 +65,6 @@ function invalid(id) {
 }
 
 function sendMessage() {
-
     var f_text = document.getElementById('fname').value;
     var l_text = document.getElementById('lname').value;
     var e_text = document.getElementById('email').value;
