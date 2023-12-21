@@ -56,6 +56,10 @@ function findSection(section) {
 }
 
 function findProject(project) {
+    if (project == 'bb') {
+        window.open('https://github.com/AkinAnanas/BughouseBlitz', _blank).focus()
+        return;
+    }
     alert("Coming Soon!");
 }
 
