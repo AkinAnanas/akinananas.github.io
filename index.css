@@ -17,6 +17,8 @@
     .two-content-right {
         width: 100%;
         margin-left: 0%;
+        margin-top: 0px;;
+        margin-bottom: 10px;
     }
 
     .project-container {
@@ -30,6 +32,10 @@
     #contact-methods {
         margin-top: 0px;
         margin-bottom: 40px;
+    }
+
+    #intro {
+        margin-top: 20px;
     }
 
     .inverted-color-scheme {
@@ -71,18 +77,20 @@
     }
 
     .inverted-color-scheme {
-        background-color: var(--text-color);
-        color: var(--text-link-color);
+        color: var(--text-color);
+        background-color: var(--bg-color);
     }
 }
 
 html {
     width: 100%;
-    --bg-color: rgb(90, 178, 255);
-    --fg-color: rgb(160, 222, 255);
-    --text-color: beige;
-    --text-link-color: skyblue;
-    --text-hover-color: rgb(202, 244, 255);
+    --bg-color: #272838;
+    --light-bg-color: #ecf8fd;
+    --fg-color: #272838;
+    --dark-fg-color: #f2b418;
+    --text-color: lightblue;
+    --text-link-color: #afc8d5;
+    --text-hover-color: #815355;
     background-color: var(--fg-color);
     color: var(--text-color);
     font-family: "Inconsolata", monospace;
@@ -92,12 +100,16 @@ html {
 }
 
 nav {
+    overflow: hidden;
     background-color: var(--fg-color);
     display: inline-flexbox;
     margin-top: 0px;
     margin-bottom: 5px;
     padding-top: 1%;
     padding-bottom: 1%;
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
 h1 {
@@ -122,13 +134,12 @@ a {
 }
 
 .contact-link {
-    color: var(--text-hover-color);
+    color: var(--text-color);
 }
 
 .contact-link:hover {
-    color: var(--text-color);
-    background-color: var(--fg-color);
-    box-shadow: 10px 10px currentColor;
+    color: var(--text-hover-color);
+    text-decoration: underline;
     cursor: pointer;
 }
 
@@ -138,8 +149,7 @@ a {
 
 .nav-link:hover {
     color: var(--text-hover-color);
-    background-color: var(--bg-color);
-    box-shadow: 10px 10px currentColor;
+    text-decoration: underline;
     cursor: pointer;
 }
 
@@ -162,7 +172,7 @@ p {
 }
 
 .one-content {
-    background-color: var(--text-link-color);
+    background-color: var(--light-bg-color);
     color: var(--text-color);
 }
 
@@ -194,28 +204,8 @@ p {
     }
 }
 
-.polka-dots {
-    background-image:  radial-gradient(var(--text-link-color) 10px, transparent 10px), radial-gradient(var(--text-link-color) 10px, var(--text-color) 10px);
-    background-size: 100px 100px;
-    background-position: 0 0,50px 50px;
-    animation: move-diagonal linear 8s infinite;
-}
-
-.inverted-polka-dots {
-    background-image:  radial-gradient(var(--text-color) 2px, transparent 2px), radial-gradient(var(--text-color) 2px, var(--bg-color) 2px);
-    background-size: 50px 50px;
-    background-position: 0 0,25px 25px;
-    animation: move-diagonal-left linear 10s infinite;
-    border-radius: 20px;
-}
-
-.stripes {
-    background: repeating-linear-gradient( -45deg, var(--text-color), var(--text-color) 10px, var(--bg-color) 10px, var(--bg-color) 50px );
-    border-radius: 20px;
-}
-
 #intro-images {
-    background-color: var(--text-color);
+    background-color: var(--bg-color);
 }
 
 .two-content, .one-content {
@@ -283,19 +273,18 @@ body {
 iframe {
     border: none;
     border-radius: 20px;
-    border: 5px var(--text-link-color) solid;
+    border: 5px var(--text-color) solid;
 }
 
 .project {
     margin: 10px 10px 10px 10px;
     padding-bottom: 20px;
+    color: var(--text-link-color);
 }
 
 .project:hover {
     cursor: pointer;
-    color: var(--text-hover-color);
-    background-color: var(--bg-color);
-    box-shadow: 15px 15px currentColor;
+    color: var(--dark-fg-color);
 }
 
 .project-container {
@@ -347,7 +336,7 @@ hr {
     width: 20%;
     border: 5px var(--text-link-color) solid;
     border-radius: 20px;
-    background-color: var(--fg-color);
+    background-color: white;
     margin-right: 0px;
     margin-left: 5%;
 }
